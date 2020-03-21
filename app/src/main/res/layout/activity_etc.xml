@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/login_toolbar"
+        layout="@layout/toolbar_main" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="110dp"
+        android:layout_marginRight="110dp"
+        android:background="#f2f2f2"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="ETC账户信息"
+            android:textColor="#000"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="账号余额："
+                android:textColor="#000"
+                android:textSize="35dp" />
+
+            <TextView
+                android:id="@+id/etc_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text=""
+                android:textColor="#000"
+                android:textSize="35dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="车         号："
+                android:textColor="#000"
+                android:textSize="35dp" />
+
+            <Spinner
+
+                android:id="@+id/spinner_1"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp" />
+
+            <Button
+                android:id="@+id/etc_select"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/etc_btn_boder"
+                android:text="查询"
+                android:textColor="#000"
+                android:textSize="35dp"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/successful_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="查询完成"
+                android:textColor="#f00"
+                android:textSize="35dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="充值金额："
+                android:textColor="#000"
+                android:textSize="35dp" />
+
+            <Spinner
+                android:id="@+id/spinner_2"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp" />
+
+            <Button
+                android:id="@+id/etc_rechage"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_30"
+                android:background="@drawable/etc_btn_boder"
+                android:text="充值"
+                android:textColor="#000"
+                android:textSize="35dp"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/successful_rechage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="充值成功"
+                android:textColor="#f00"
+                android:textSize="35dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="查询充值记录"
+            android:textColor="#000"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="车         号："
+                android:textColor="#000"
+                android:textSize="35dp" />
+
+            <Spinner
+                android:id="@+id/spinner_3"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/time_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="时间升序"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/time_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="时间降序"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/etc_record"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/etc_btn_boder"
+                android:text="查询"
+                android:textColor="#000"
+                android:textSize="35dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="125dp"
+                android:layout_height="50dp"
+                android:background="@drawable/etc_list_boder2"
+                android:gravity="center"
+                android:text="序号"
+                android:textColor="#000"
+                android:textSize="25dp" />
+
+            <TextView
+                android:layout_width="181dp"
+                android:layout_height="50dp"
+                android:background="@drawable/etc_list_boder2"
+                android:gravity="center"
+                android:text="车号"
+                android:textColor="#000"
+                android:textSize="25dp" />
+
+            <TextView
+                android:layout_width="232dp"
+                android:layout_height="50dp"
+                android:background="@drawable/etc_list_boder2"
+                android:gravity="center"
+                android:text="充值金额(元)"
+                android:textColor="#000"
+                android:textSize="25dp" />
+
+            <TextView
+                android:layout_width="190dp"
+                android:layout_height="50dp"
+                android:background="@drawable/etc_list_boder2"
+                android:gravity="center"
+                android:text="操作人"
+                android:textColor="#000"
+                android:textSize="25dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/etc_list_boder2"
+                android:gravity="center"
+                android:text="充值时间"
+                android:textColor="#000"
+                android:textSize="25dp" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/etc_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -60,8 +60,10 @@
     </ul>
 </div>
 <script>
+    document.getElementsByClassName('user-name')[0].innerText = app.user('pname');
+    document.getElementsByClassName('user-phone')[0].innerText = app.user('ptel').substr(0,3) + "*********";
     document.getElementsByClassName('task-btn')[0].onclick = function () {
-        window.location.href = 'file:///android_asset/www/detail.html';
+        app.jifen();
     };
 </script>
 </body>
