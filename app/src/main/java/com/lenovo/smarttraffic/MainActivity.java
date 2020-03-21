@@ -17,8 +17,10 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.lenovo.smarttraffic.ui.activity.BaseActivity;
-import com.lenovo.smarttraffic.ui.activity.Item1Activity;
 import com.lenovo.smarttraffic.ui.activity.LoginActivity;
+import com.lenovo.smarttraffic.ui.activity.SubwayActivity;
+import com.lenovo.smarttraffic.ui.activity.UserCenterActivity;
+import com.lenovo.smarttraffic.ui.activity.XiaoFeiActivity;
 import com.lenovo.smarttraffic.ui.fragment.DesignFragment;
 import com.lenovo.smarttraffic.ui.fragment.MainContentFragment;
 import de.hdodenhof.circleimageview.CircleImageView;
@@ -160,13 +162,17 @@ public class MainActivity extends BaseActivity implements NavigationView.OnNavig
         switch (id){
             case R.id.nav_account:
                 string = "个人";
+                startActivity(new Intent(this, UserCenterActivity.class));
+
                 break;
             case R.id.item_1:
                 string = "item1";
-                startActivity(new Intent(this, Item1Activity.class));
+                startActivity(new Intent(this, SubwayActivity.class));
                 break;
             case R.id.item_2:
                 string = "item2";
+                startActivity(new Intent(this, XiaoFeiActivity.class));
+
                 break;
             case R.id.item_3:
                 string = "item3";

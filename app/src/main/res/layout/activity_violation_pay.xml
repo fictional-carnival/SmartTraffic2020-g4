@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/list_tab_toolbar"
+        layout="@layout/toolbar_main" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#f2f2f2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="35dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:text="违章罚款支付" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="#000000" />
+
+        <TextView
+            android:id="@+id/tv_tip"
+            android:textSize="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/im_er"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:src="@mipmap/icon_erweima"
+            />
+    </LinearLayout>
+</LinearLayout>

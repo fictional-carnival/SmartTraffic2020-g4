@@ -4,8 +4,12 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
 
 import com.lenovo.smarttraffic.InitApp;
+import com.lenovo.smarttraffic.R;
+
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
 import me.yokeyword.fragmentation.SupportActivity;
@@ -16,15 +20,18 @@ import me.yokeyword.fragmentation.SupportActivity;
  * description：
  */
 
-public abstract class BaseActivity extends SupportActivity{
+public abstract class BaseActivity extends SupportActivity {
 
     private static final String TAG = "BaseActivity";
     private Unbinder unbind;
+
     /**
      * 初始化 Toolbar
      */
     public void initToolBar(Toolbar toolbar, boolean homeAsUpEnabled, String title) {
-        toolbar.setTitle(title);
+        toolbar.setTitle("");
+        TextView tv_toolbar = findViewById(R.id.tv_toolbar);
+        tv_toolbar.setText(title);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(homeAsUpEnabled);
     }
@@ -56,9 +63,9 @@ public abstract class BaseActivity extends SupportActivity{
     public void onBackPressedSupport() {
         //fragment逐个退出
         int count = getSupportFragmentManager().getBackStackEntryCount();
-        if (count == 0){
+        if (count == 0) {
             super.onBackPressedSupport();
-        }else {
+        } else {
             getSupportFragmentManager().popBackStack();
         }
     }
@@ -74,5 +81,6 @@ public abstract class BaseActivity extends SupportActivity{
     protected void onStop() {
         super.onStop();
     }
+
     protected abstract int getLayout();
 }

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="120dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#fff"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/tv_xh"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="99"
+            android:textSize="30dp" />
+
+        <ImageView
+            android:id="@+id/im_zp"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/benchi" />
+
+        <TextView
+            android:id="@+id/tv_cp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="皖A10001"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/tv_dd"
+            android:layout_width="wrap_content"
+
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="学院路"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/tv_yx"
+
+            android:layout_width="175dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="非法...闯红灯"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/tv_kf"
+
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="无"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/tv_fk"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="1000"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/tv_sj"
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="2019-10-05 12:13:21"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/tv_zt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="未处理"
+            android:textColor="#f00"
+            android:textSize="28dp" />
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

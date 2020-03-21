@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        android:gravity="center"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:background="@drawable/back_1"
+            android:layout_marginRight="25dp"
+            android:id="@+id/tv_1"
+            android:text="1"
+            style="@style/load_back" />
+        <TextView
+            android:background="@drawable/back_2"
+
+            android:layout_marginRight="25dp"
+            android:id="@+id/tv_2"
+            android:text="2"
+            style="@style/load_back" />
+        <TextView
+            android:background="@drawable/back_3"
+
+            android:layout_marginRight="25dp"
+
+            android:id="@+id/tv_3"
+            android:text="3"
+            style="@style/load_back" />
+        <TextView
+            android:background="@drawable/back_4"
+
+            android:id="@+id/tv_4"
+            android:text="4"
+            style="@style/load_back" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:background="@drawable/back_5"
+            android:layout_marginRight="25dp"
+            android:id="@+id/tv_5"
+            android:text="10"
+            style="@style/load_back" />
+        <TextView
+            android:background="@drawable/back_6"
+
+            android:layout_marginRight="25dp"
+            android:id="@+id/tv_6"
+            android:text="S1"
+            style="@style/load_back" />
+        <TextView
+            android:background="@drawable/back_7"
+
+            android:layout_marginRight="25dp"
+
+            android:id="@+id/tv_7"
+            android:text="S3"
+            style="@style/load_back" />
+        <TextView
+            android:background="@drawable/back_8"
+
+            android:id="@+id/tv_8"
+            android:text="S8"
+            style="@style/load_back" />
+
+
+    </LinearLayout>
+</LinearLayout>

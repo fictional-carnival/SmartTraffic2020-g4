@@ -59,6 +59,33 @@
         <activity android:name=".ui.activity.Item1Activity"
             android:configChanges="orientation|screenSize|uiMode"
             android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".ui.activity.XiaoFeiActivity"
+            android:configChanges="orientation|screenSize|uiMode"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".ui.activity.SubwayDeailActivity"
+            android:configChanges="orientation|screenSize|uiMode"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".ui.activity.SubwayActivity"
+            android:configChanges="orientation|screenSize|uiMode"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".ui.activity.UserCenterActivity"
+            android:configChanges="orientation|screenSize|uiMode"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".ui.activity.ScActivity"
+            android:configChanges="orientation|screenSize|uiMode"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".ui.activity.ViolationPayActivity"
+            android:configChanges="orientation|screenSize|uiMode"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".ui.activity.ViolationActivity"
+            android:configChanges="orientation|screenSize|uiMode"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".ui.activity.TipActivity"
+        android:configChanges="orientation|screenSize|uiMode"
+        android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".ui.activity.ParkInfoActivity"
+        android:configChanges="orientation|screenSize|uiMode"
+        android:theme="@style/AppTheme.NoActionBar"/>
 
         <activity
             android:name=".ui.activity.ChannelActivity"
