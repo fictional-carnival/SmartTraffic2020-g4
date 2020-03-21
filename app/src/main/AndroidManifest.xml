@@ -66,6 +66,22 @@
             android:label="@string/title_item_main"
             android:theme="@style/AppTheme.NoActionBar.Slidable"/>
 
+        <activity android:name=".ui.activity.Activity_QianDao"
+            android:configChanges="orientation|screenSize|uiMode"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity android:name=".ui.activity.Activity_QianDao2"
+            android:configChanges="orientation|screenSize|uiMode"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity android:name=".ui.activity.Activity_ETC"
+            android:configChanges="orientation|screenSize|uiMode"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity android:name=".ui.activity.Activity_Weather"
+            android:configChanges="orientation|screenSize|uiMode"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
         <!--离线地图key-->
         <meta-data
             android:name="com.amap.api.v2.apikey"

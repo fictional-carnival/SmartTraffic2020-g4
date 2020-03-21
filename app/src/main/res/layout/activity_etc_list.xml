@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/xuhao"
+            android:layout_width="125dp"
+            android:layout_height="50dp"
+            android:background="@drawable/etc_list_boder2"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="#000"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/chehao"
+            android:layout_width="181dp"
+            android:layout_height="50dp"
+            android:background="@drawable/etc_list_boder2"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="#000"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/etc_money"
+            android:layout_width="232dp"
+            android:layout_height="50dp"
+            android:background="@drawable/etc_list_boder2"
+            android:gravity="center"
+            android:text="200"
+            android:textColor="#000"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/etc_user"
+            android:layout_width="190dp"
+            android:layout_height="50dp"
+            android:background="@drawable/etc_list_boder2"
+            android:gravity="center"
+            android:text="user1"
+            android:textColor="#000"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/etc_time"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/etc_list_boder2"
+            android:gravity="center"
+            android:text="2019.4.10 13:10"
+            android:textColor="#000"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+</LinearLayout>
